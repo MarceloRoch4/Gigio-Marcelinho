@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>396 dias...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lockscreen-state">
+
+    <div id="lockscreen">
+        <div class="lockscreen-inner">
+            <h1>Desbloquear</h1>
+            <div id="password-input"><div class="digit-box"></div><div class="digit-box"></div><div class="digit-box"></div><div class="digit-box"></div><div class="digit-box"></div><div class="digit-box"></div></div>
+            <div id="numpad"><button class="numpad-button" data-digit="1">1</button><button class="numpad-button" data-digit="2">2</button><button class="numpad-button" data-digit="3">3</button><button class="numpad-button" data-digit="4">4</button><button class="numpad-button" data-digit="5">5</button><button class="numpad-button" data-digit="6">6</button><button class="numpad-button" data-digit="7">7</button><button class="numpad-button" data-digit="8">8</button><button class="numpad-button" data-digit="9">9</button><button id="delete-button" class="numpad-button">&#x232B;</button><button class="numpad-button" data-digit="0">0</button><button id="enter-button" class="numpad-button">OK</button></div>
+            <p id="error-message" class="error hidden">Dica: Quando tudo começou...</p>
+        </div>
+    </div>
+    <div id="content" class="hidden">
+        <div id="hearts-container"></div>
+        <audio id="musicaFundo" src="Sammy Wilk - Saturday (The Wedding Song).mp3" loop></audio>
+        <div class="top-content">
+            <div class="music-player">
+                <div class="album-cover"><img id="albumCapa" src="images/cover.jpg" alt="Capa do Álbum"></div>
+                <div class="music-info"><h3 id="musicaTitulo">Saturday (The Wedding Song)</h3><p id="musicaArtista">Sammy Wilk</p></div>
+                <div class="controls"><button id="playPauseBtn" class="play-pause"><svg id="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg><svg id="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display: none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg></button></div>
+            </div>
+            <h1>Feliz 1 ano e 1 mês!</h1>
+            <p class="instructions">Use as setas do teclado ou arraste uma página para folhear.</p>
+        </div>
+        <main>
+            <div id="album" class="album">
+                <div class="page"><div class="page-front cover"><div class="cover-photo-frame"><img src="images/foto9.jpg" alt="Foto da Capa"></div><span class="cover-title">Our moments...</span></div><div class="page-back"><div class="photo"><img src="images/foto1.jpg" alt="Foto 1"></div><p class="caption">Nossa primeira foto juntos (como namorados)</p></div></div>
+                <div class="page"><div class="page-front"><div class="photo"><img src="images/foto2.jpg" alt="Foto 2"></div><p class="caption">Cineminha? Claro!</p></div><div class="page-back"><div class="photo"><img src="images/foto3.webp" alt="Foto 3"></div><p class="caption">😜</p></div></div>
+                <div class="page"><div class="page-front"><div class="photo"><img src="images/foto4.webp" alt="Foto 4"></div><p class="caption">Me, you and Roberto.</p></div><div class="page-back"><div class="photo"><img src="images/foto5.jpg" alt="Foto 5"></div><p class="caption">Gigio faz 21! 🥳♥</p></div></div>
+                <div class="page"><div class="page-front"><div class="photo"><img src="images/foto5.webp" alt="Foto 6"></div><p class="caption">Você sempre me faz sorrir!</p></div><div class="page-back"><div class="photo"><img src="images/foto6.jpg" alt="Foto 7"></div><p class="caption">You make me happy!</p></div></div>
+                <div class="page"><div class="page-front"><div class="photo"><img src="images/foto7.jpg" alt="Foto 8"></div><p class="caption">Lindos e perfeitos...</p></div><div class="page-back"><div class="photo"><img src="images/foto8.jpg" alt="Foto 9"></div><p class="caption">Eu amo essa foto... (sei que você não gosta, sorry kk)</p></div></div>
+                <div class="page"><div class="page-front"><div class="photo"><img src="images/foto9.jpg" alt="Foto 10"></div><p class="caption">The smile who make my heart beat louder!</p></div><div class="page-back"><div class="photo"><img src="images/foto10.jpg" alt="Foto 11"></div><p class="caption">Sempre sorrindo ao seu lado...</p></div></div>
+                <div class="page"><div class="page-front"><div class="photo"><img src="images/foto11.jpg" alt="Foto 12"></div><p class="caption">A gente combina de qualquer jeito... 💕</p></div><div class="page-back"><div class="photo"><img src="images/foto12.jpg" alt="Foto 13"></div><p class="caption">Sair com você é incrivelmente maravilhoso 💞</p></div></div>
+                <div class="page"><div class="page-front"><div class="photo"><img src="images/foto13.jpg" alt="Foto 14"></div><p class="caption">💕</p></div><div class="page-back"><div class="photo"><img src="images/foto14.jpg" alt="Foto 15"></div><p class="caption">Seu olhar me hipnotiza 😍</p></div></div>
+                <div class="page"><div class="page-front"><div class="photo"><img src="images/foto15.jpg" alt="Foto 16"></div><p class="caption">🦁</p></div><div class="page-back"><div class="photo"><img src="images/foto16.jpg" alt="Foto 17"></div><p class="caption">Me, You and Steve 🤣</p></div></div>
+                <div class="page"><div class="page-front"><div class="photo"><img src="images/foto17.jpg" alt="Foto 18"></div><p class="caption">É sempre bom servir ao seu lado ❤️</p></div><div class="page-back"><div class="photo"><img src="images/foto18.jpg" alt="Foto 19"></div><p class="caption">É leviôsa, não leviosá</p></div></div>
+                <div class="page"><div class="page-front"><div class="photo"><img src="images/foto19.jpg" alt="Foto 18"></div><p class="caption">Amo suas caras e bocas 🤪❤️</p></div><div class="page-back"><div class="photo"><img src="images/foto20.jpg" alt="Foto 19"></div><p class="caption">Amo seu cuidado com crianças!</p></div></div>
+                <div class="page"><div class="page-front"><div class="photo"><img src="images/foto21.jpg" alt="Foto 20"></div><p class="caption">Te amo!</p></div><div class="page-back"><div class="photo"><img src="images/foto23.jpg" alt="Foto 21"></div><p class="caption">Te amo! Muito muito muito mesmo (de verdade).</p></div></div>
+                <div class="page"><div class="page-front"><div class="photo"><img src="images/foto22.jpg" alt="Foto 21"></div><p class="caption">396 dias e contando...</p></div><div class="page-back back-cover"><p>PS.: I love you!</p></div></div>
+            </div>
+            <div class="love-letter-container">
+                <h2>A love letter to you...</h2>
+                <p class="letter-body">Querida Gigio, ou melhor... Amor da minha vida,<br><br>Gostaria de dizer que durante esses 396 dias temos colecionado muitos momentos e estar com você é o que melhora os meus dias. AMO teu abraço, o teu cheiro, o teu toque... Amo tudo em você e acredito que você já saiba disso!<br><br>Esse ‘álbum’ é para mostrar apenas um pouco do que já passamos, nossos momentos e uma forma de expressar meu carinho e amor por você! Até aqui foram tantas conversas (sérias e bestas), conselhos, discussões kk, saídas, viagens até sua casa, enfim... Creio que seja apenas o começo de toda a eternidade que desejo passar com você.<br><br>Que Jesus continue abençoando nossa jornada e que possamos comemorar essa data muitas e muitas vezes... Te amo, meu amor ♥.<br><br>But everyday feels like Saturday with you ♪♫</p>
+                <p class="letter-signature">Com todo meu amor,<br>João Marcelo.</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // SCRIPT DA TELA DE BLOQUEIO
+        const correctPassword = '140524';
+        let currentPassword = '';
+        const passwordBoxes = document.querySelectorAll('#password-input .digit-box');
+        const errorMessage = document.getElementById('error-message');
+        const lockscreenContent = document.querySelector('.lockscreen-inner');
+        function updatePasswordDisplay() { passwordBoxes.forEach((box, index) => { if (index < currentPassword.length) { box.classList.add('filled'); } else { box.classList.remove('filled'); } }); }
+        function handleKeyPress(key) { if (key === 'delete') { currentPassword = currentPassword.slice(0, -1); } else if (/\d/.test(key) && currentPassword.length < 6) { currentPassword += key; } updatePasswordDisplay(); }
+        function checkPassword() { if (currentPassword === correctPassword) { document.body.classList.add('unlocked'); document.body.classList.remove('lockscreen-state'); document.getElementById('lockscreen').style.display = 'none'; document.getElementById('content').classList.remove('hidden'); initializeMainContent(); } else { errorMessage.classList.remove('hidden'); lockscreenContent.classList.add('shake-error'); setTimeout(() => { errorMessage.classList.add('hidden'); lockscreenContent.classList.remove('shake-error'); currentPassword = ''; updatePasswordDisplay(); }, 1000); } }
+        document.querySelectorAll('.numpad-button').forEach(button => { button.addEventListener('click', (e) => { const key = e.currentTarget.dataset.digit; if (key) handleKeyPress(key); }); });
+        document.getElementById('delete-button').addEventListener('click', () => handleKeyPress('delete'));
+        document.getElementById('enter-button').addEventListener('click', checkPassword);
+        document.addEventListener('keydown', (e) => { if (document.body.classList.contains('lockscreen-state')) { if (e.key === 'Enter') checkPassword(); if (e.key === 'Backspace') handleKeyPress('delete'); if (/\d/.test(e.key)) handleKeyPress(e.key); }});
+        
+        function initializeMainContent() {
+            // Lógica de Música e Corações
+            const musica = document.getElementById('musicaFundo');
+            const playPauseBtn = document.getElementById('playPauseBtn');
+            let isPlaying = false;
+            function togglePlayPause() { if(isPlaying){musica.pause();}else{musica.play();} isPlaying=!isPlaying; document.getElementById('icon-play').style.display=isPlaying?'none':'block'; document.getElementById('icon-pause').style.display=isPlaying?'block':'none';}
+            playPauseBtn.addEventListener('click', togglePlayPause);
+            if (!isPlaying) { togglePlayPause(); }
+            setInterval(() => { const c = document.getElementById('hearts-container'); if (!c) return; const h = document.createElement('div'); h.classList.add('heart'); h.style.left = (Math.random() * 90 + 5) + 'vw'; h.style.animationDuration = (Math.random() * 3 + 4) + 's'; h.style.fontSize = (Math.random() * 10 + 10) + 'px'; h.innerHTML = '❤'; c.appendChild(h); setTimeout(() => { h.remove(); }, 7000); }, 300);
+            
+            // Lógica do Álbum
+            const album = document.getElementById('album');
+            const pages = document.querySelectorAll('.page');
+            const totalPages = pages.length;
+            let currentPage = 0;
+            let isFlipping = false;
+            let targetPage = null;
+            let startDragX = 0;
+
+            function updateZIndexes() { pages.forEach((page, index) => { page.style.zIndex = index < currentPage ? index + 1 : totalPages - index; }); }
+            updateZIndexes();
+
+            function turnPageForward() {
+                if (isFlipping || currentPage >= totalPages) return;
+                isFlipping = true;
+                
+                // ATUALIZAÇÃO: Adiciona a classe que desloca o álbum
+                if (currentPage === 0) {
+                    album.classList.add('is-open');
+                }
+
+                const pageToFlip = pages[currentPage];
+                pageToFlip.style.zIndex = totalPages + 5;
+                pageToFlip.classList.add('flipped');
+                setTimeout(() => {
+                    currentPage++;
+                    updateZIndexes();
+                    isFlipping = false;
+                    if (currentPage === totalPages) {
+                        setTimeout(closeAlbum, 800);
+                    }
+                }, 600);
+            }
+
+            function turnPageBackward() {
+                if (isFlipping || currentPage <= 0) return;
+                isFlipping = true;
+                currentPage--;
+
+                // ATUALIZAÇÃO: Remove a classe se voltar para a capa
+                if (currentPage === 0) {
+                    album.classList.remove('is-open');
+                }
+                
+                const pageToUnflip = pages[currentPage];
+                pageToUnflip.style.zIndex = totalPages + 5;
+                pageToUnflip.classList.remove('flipped');
+                setTimeout(() => {
+                    updateZIndexes();
+                    isFlipping = false;
+                }, 600);
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (isFlipping) return;
+                if (e.key === "ArrowRight") {
+                    turnPageForward();
+                } else if (e.key === "ArrowLeft") {
+                    turnPageBackward();
+                }
+            });
+
+            album.addEventListener('mousedown', startFlip);
+            album.addEventListener('touchstart', startFlip, { passive: true });
+            document.addEventListener('mousemove', dragFlip);
+            document.addEventListener('touchmove', dragFlip, { passive: true });
+            document.addEventListener('mouseup', endFlip);
+            document.addEventListener('touchend', endFlip);
+            function startFlip(e) { if (isFlipping) return; const clickX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX; const albumRect = album.getBoundingClientRect(); const clickXRelative = clickX - albumRect.left; if (clickXRelative > albumRect.width / 2 && currentPage < totalPages) { targetPage = pages[currentPage]; } else if (clickXRelative < albumRect.width / 2 && currentPage > 0) { targetPage = pages[currentPage - 1]; } else { return; } isFlipping = true; startDragX = clickX; targetPage.classList.add('no-transition'); targetPage.style.zIndex = totalPages + 5; }
+            function dragFlip(e) { if (!isFlipping) return; const currentX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX; const deltaX = currentX - startDragX; const isFlippingForward = (targetPage === pages[currentPage]); let rotation; if (isFlippingForward) { rotation = Math.min(0, Math.max(-180, (deltaX / album.offsetWidth) * 180)); } else { rotation = -180 + Math.min(180, Math.max(0, (deltaX / album.offsetWidth) * 180)); } targetPage.style.transform = `rotateY(${rotation}deg)`; }
+            function endFlip() {
+                if (!isFlipping) return;
+                isFlipping = false;
+                targetPage.classList.remove('no-transition');
+                const transformStyle = targetPage.style.transform;
+                const currentRotation = transformStyle ? parseFloat(transformStyle.split('rotateY(')[1]) : 0;
+                const isFlippingForward = (targetPage === pages[currentPage]);
+                
+                if (isFlippingForward) {
+                    if (currentRotation < -90) {
+                        if (currentPage === 0) { album.classList.add('is-open'); } // ATUALIZAÇÃO
+                        targetPage.classList.add('flipped');
+                        currentPage++;
+                        if (currentPage === totalPages) closeAlbum();
+                    } else {
+                        targetPage.style.transform = '';
+                    }
+                } else {
+                    if (currentRotation > -90) {
+                        if (currentPage === 1) { album.classList.remove('is-open'); } // ATUALIZAÇÃO
+                        targetPage.classList.remove('flipped');
+                        currentPage--;
+                    } else {
+                        targetPage.style.transform = 'rotateY(-180deg)';
+                    }
+                }
+                updateZIndexes();
+                targetPage = null;
+            }
+            function closeAlbum() {
+                album.classList.add('closing');
+                album.classList.remove('is-open'); // ATUALIZAÇÃO
+                setTimeout(() => {
+                    pages.forEach(page => {
+                        page.classList.remove('flipped');
+                        page.style.transform = '';
+                    });
+                    currentPage = 0;
+                    updateZIndexes();
+                    album.classList.remove('closing');
+                }, 1200);
+            }
+        }
+    </script>
+</body>
+</html>
